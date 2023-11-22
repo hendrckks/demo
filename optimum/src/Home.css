@@ -1,0 +1,18 @@
+.home-container {
+  background-image: url("	https://ninjapromo.io/wp-content/themes/ninjapromo/assets/img/hero-section/hero-bg-front.jpg");
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: auto;
+}
+
+.font-roboto-slab {
+  font-family: "Roboto Slab", serif;
+}
+
+.font-vina-sans {
+  font-family: "Vina Sans", sans-serif;
+}
