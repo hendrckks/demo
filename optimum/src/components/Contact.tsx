@@ -51,50 +51,68 @@ function Contact() {
         <p className="py-[3.75px] flex justify-center">
           <span>Email</span>: djvortex99@gmail.com
         </p>
-        <div className="my-5 space-y-5">
+        <div className="my-4 space-y-5">
           <form onSubmit={handleSubmit}>
-            <div className="flex-col">
+            <div className="block">
               <label htmlFor="name">
                 Full Name / Company Name
-                <span className="required"> (required):</span>
+                <span className="required">
+                  {" "}
+                  (required)<span>:</span>
+                </span>
               </label>
-              <input
-                type="text"
-                className="name-input"
-                placeholder="."
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+              <div>
+                <input
+                  type="text"
+                  className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                  placeholder="."
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
             </div>
-            <div className="email-container">
+            <div className="mt-4 block">
               <label htmlFor="email">
-                Email Address<span className="required"> (required)</span>
+                Email Address
+                <span className="required">
+                  {" "}
+                  (required)<span>:</span>
+                </span>
               </label>
-              <input
-                type="text"
-                className="email-input"
-                placeholder="."
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+              <div>
+                <input
+                  type="text"
+                  className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                  placeholder="."
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
             </div>
-            <div className="message-container">
+            <div className="block mt-4">
               <label htmlFor="message">
                 Message
-                <span className="required"> (required)</span>
+                <span className="required">
+                  {" "}
+                  (required)<span>:</span>
+                </span>
               </label>
-              <textarea
-                className="message"
-                placeholder="."
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
+              <div>
+                <textarea
+                  className="w-[100%] overflow-hidden h-[120px] mt-4 outline-none focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                  placeholder="Your Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </div>
             </div>
-            <button type="submit">SUBMIT</button>
+            <div className="flex justify-center items-center mt-5 border-[1.5px] hover:bg-black hover:border-white hover:text-white border-black">
+              <button type="submit">SUBMIT</button>
+            </div>
           </form>
         </div>
       </div>
-      <div className="text-black">
+      <div className="text-white block">
         <blockquote className="quote" data-animation-role="quote">
           <span>"</span>
           WE SHALL NOT CEASE FROM EXPLORATION AND AT THE END OF ALL OUR
