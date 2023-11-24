@@ -1,15 +1,16 @@
 import "../Home.css";
 import Contact from "../components/Contact";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import Services from "./Services";
 
 function Home() {
   return (
     <div>
       <div className="home-container">
-        <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans max-w-[1020px]">
+        <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans ">
           <h1 className=" text-4xl flex justify-center items-center font-semibold">
-            We Are <span className="mx-3">Optimum</span>{" "}
-            <span className="text-neutral-600 mx-[0.5px]">Outreach.</span>
+            Welcome To <span className="mx-3">Optimum</span>{" "}
+            <span className="text-neutral-600 mx-[0.5px]">Outreach .</span>
           </h1>
           <div className="w-auto overflow-hidden my-5 mx-auto flex-col text-[40px]">
             <h1 className=" font-semibold flex justify-center items-center">
@@ -36,17 +37,18 @@ function Home() {
                 </h2>
               </button>
             </div>
-            <div className="w-auto flex items-center justify-center">
+            <div className="w-auto flex items-center justify-center group">
               <button className="" type="button">
                 <h2 className="px-6 py-4 text-[15px]">Get Started</h2>
               </button>
-              <div className="relative right-3">
-                <ArrowCircleRightIcon />
+              <div className="relative right-3 ">
+                <ArrowCircleRightIcon className="text-white transform translate-x-1.1 group-hover:text-teal-700 transition duration-300 ease-in-out translate-1.1" />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Services />
       <Contact />
     </div>
   );
