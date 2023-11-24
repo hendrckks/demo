@@ -1,5 +1,6 @@
 import "../Home.css";
 import Contact from "../components/Contact";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 function Home() {
   return (
@@ -26,6 +27,23 @@ function Home() {
             <p className="flex justify-center font-semibold items-center">
               solutions, branding and creative design.
             </p>
+          </div>
+          <div className="flex items-center justify-center mt-14 font-semibold  space-x-4">
+            <div className="w-auto">
+              <button className="border-2 " type="button">
+                <h2 className="px-6 py-4 text-[15px]">
+                  Request A Free Proposal
+                </h2>
+              </button>
+            </div>
+            <div className="w-auto flex items-center justify-center">
+              <button className="" type="button">
+                <h2 className="px-6 py-4 text-[15px]">Get Started</h2>
+              </button>
+              <div className="relative right-3">
+                <ArrowCircleRightIcon />
+              </div>
+            </div>
           </div>
         </div>
       </div>
