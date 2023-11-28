@@ -44,12 +44,12 @@ function Contact() {
 
   return (
     <div className="contacts-container">
-      <div className="border-2 block text-black bg-white p-20">
+      <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
         <h2 className="text-3xl font-extralight flex justify-center">
           <span>LET'S WORK TOGETHER</span>
         </h2>
-        <p className="py-[3.75px] flex justify-center">
-          <span>Email</span>: djvortex99@gmail.com
+        <p className="py-[3.85px] mt-2 flex justify-center">
+          <span>Email</span>: optimumoutreach@gmail.com
         </p>
         <div className="my-4 space-y-5">
           <form onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ function Contact() {
               <div>
                 <input
                   type="text"
-                  className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                  className="mt-4 w-[100%] outline-none bg-transparent focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
                   placeholder="."
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -82,7 +82,7 @@ function Contact() {
               <div>
                 <input
                   type="text"
-                  className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                  className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
                   placeholder="."
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -99,20 +99,20 @@ function Contact() {
               </label>
               <div>
                 <textarea
-                  className="w-[100%] overflow-hidden h-[120px] mt-4 outline-none focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                  className="w-[100%] overflow-hidden h-[120px] mt-4 outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
                   placeholder="Your Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
             </div>
-            <div className="flex justify-center items-center mt-5 border-[1.5px] hover:bg-black hover:border-white hover:text-white border-black">
+            <div className="flex justify-center items-center w-[100px] mt-5 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black">
               <button type="submit">SUBMIT</button>
             </div>
           </form>
         </div>
       </div>
-      <div className="text-white block">
+      <div className="text-white block mt-16">
         <blockquote className="quote" data-animation-role="quote">
           <span>"</span>
           WE SHALL NOT CEASE FROM EXPLORATION AND AT THE END OF ALL OUR
@@ -120,7 +120,7 @@ function Contact() {
           THE FIRST TIME.
           <span>"</span>
         </blockquote>
-        <h5 className="author">— T. S. ELIOT</h5>
+        <h5 className="flex justify-center items-center">— T. S. ELIOT</h5>
       </div>
     </div>
   );
