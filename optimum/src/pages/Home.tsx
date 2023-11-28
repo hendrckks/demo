@@ -38,11 +38,11 @@ function Home() {
               </button>
             </div>
             <div className="w-auto flex items-center justify-center group">
-              <button className="" type="button">
+              <button className="cursor-pointer" type="button">
                 <h2 className="px-6 py-4 text-[15px]">Get Started</h2>
               </button>
               <div className="relative right-3 ">
-                <ArrowCircleRightIcon className="text-white transform translate-x-1.1 group-hover:text-teal-700 transition duration-300 ease-in-out translate-1.1" />
+                <ArrowCircleRightIcon className="text-white group-hover:text-blue-900 group-hover:scale-150 transition-transform duration-300 ease-in-out" />
               </div>
             </div>
           </div>

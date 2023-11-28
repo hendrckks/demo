@@ -46,9 +46,9 @@ function Contact() {
     <div className="contacts-container">
       <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
         <h2 className="text-3xl font-extralight flex justify-center">
-          <span>LET'S WORK TOGETHER</span>
+          <span>TELL US ABOUT YOU</span>
         </h2>
-        <p className="py-[3.85px] mt-2 flex justify-center">
+        <p className="py-[8px] mt-2 flex justify-center">
           <span>Email</span>: optimumoutreach@gmail.com
         </p>
         <div className="my-4 space-y-5">
@@ -65,7 +65,7 @@ function Contact() {
                 <input
                   type="text"
                   className="mt-4 w-[100%] outline-none bg-transparent focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
-                  placeholder="."
+                  placeholder="-"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -83,7 +83,7 @@ function Contact() {
                 <input
                   type="text"
                   className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
-                  placeholder="."
+                  placeholder="-"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -106,7 +106,7 @@ function Contact() {
                 />
               </div>
             </div>
-            <div className="flex justify-center items-center w-[100px] mt-5 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black">
+            <div className="flex justify-center items-center h-10 mt-10 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black">
               <button type="submit">SUBMIT</button>
             </div>
           </form>

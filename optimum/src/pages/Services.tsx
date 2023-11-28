@@ -23,7 +23,9 @@ function Services() {
           <Link to="/Service/Web-App-Development">
             <ServicesCard>
               <div className="p-5">
-                <h1 className="font-semibold text-[18px]">Web App Dev</h1>
+                <h1 className="font-semibold text-[18px]">
+                  Web App Development
+                </h1>
                 <p className="mt-2">
                   At Optimum Outreach, we transform ideas into interactive
                   experiences through our Web App Development service. Craft a
