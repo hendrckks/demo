@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import ServicesCard from "../components/ServicesCard";
+import "../Services.css";
 
 function Services() {
   return (
-    <div className="bg-black h-[100vh] font-DM-sans text-white">
+    <div className="services-container">
       <div className="flex justify-center items-center py-12">
         <h1 className="text-[50px] font-semibold">
           Our Digital Marketing Services
@@ -115,7 +116,7 @@ function Services() {
             <ServicesCard>
               <div className="p-5">
                 <h1 className="font-semibold text-[18px]">Content Creation</h1>
-                <p className="mt-2">
+                <p className="mt-2 text-[13px]">
                   Compelling Visuals: Elevate your brand aesthetics with
                   visually stunning content. From eye-catching graphics to
                   attention-grabbing videos, we bring your brand to life in the
