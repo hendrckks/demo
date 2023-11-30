@@ -6,12 +6,12 @@ function Services() {
   return (
     <div className="services-container">
       <div className="flex justify-center items-center py-12">
-        <h1 className="text-[50px] font-semibold">
+        <h1 className="text-[50px] font-semibold text-[#877bae]">
           Our Digital Marketing Services
         </h1>
       </div>
       <div className="flex justify-center items-center w-[auto]">
-        <p className="w-[600px] text-[16px]">
+        <p className="w-[600px] text-[14px] text-[#e0dcf1]">
           At Optimum Outreach, we are more than just marketers; we're architects
           of digital success. Our expertise extends across the vast landscape of
           marketing, and we add a touch of spice to every campaign. High-growth
