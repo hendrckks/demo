@@ -19,7 +19,7 @@ function Services() {
         </p>
       </div>
       <div className="flex justify-center items-center mt-10">
-        <div className="gap-x-grid col-span-full grid auto-rows-fr grid-cols-4 gap-y-8 lg:grid-cols-3 lg:gap-y-6 md:gap-y-4.5 sm:grid-cols-1 sm:gap-y-4 sm:gap-x-10">
+        <div className="gap-x-grid col-span-full grid auto-rows-fr grid-cols-4 gap-y-8 lg:grid-cols-4 lg:gap-y-6 md:gap-y-4.5 sm:grid-cols-1 sm:gap-y-4 sm:gap-x-10">
           <Link to="/Service/Web-App-Development">
             <ServicesCard>
               <div className="p-5">
@@ -107,6 +107,19 @@ function Services() {
                   From keyword optimization to content strategy, we meticulously
                   craft a path to the top, ensuring your business shines in the
                   online realm.
+                </p>
+              </div>
+            </ServicesCard>
+          </Link>
+          <Link to="/Service/Content-creation">
+            <ServicesCard>
+              <div className="p-5">
+                <h1 className="font-semibold text-[18px]">Content Creation</h1>
+                <p className="mt-2">
+                  Compelling Visuals: Elevate your brand aesthetics with
+                  visually stunning content. From eye-catching graphics to
+                  attention-grabbing videos, we bring your brand to life in the
+                  digital realm.
                 </p>
               </div>
             </ServicesCard>

@@ -49,7 +49,7 @@ function Contact() {
           <span>TELL US ABOUT YOU</span>
         </h2>
         <p className="py-[8px] mt-2 flex justify-center">
-          <span>Email</span>: optimumoutreach@gmail.com
+          <span>Email</span>: optimumoutreach1@gmail.com
         </p>
         <div className="my-4 space-y-5">
           <form onSubmit={handleSubmit}>
@@ -106,8 +106,10 @@ function Contact() {
                 />
               </div>
             </div>
-            <div className="flex justify-center items-center h-10 mt-10 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black">
-              <button type="submit">SUBMIT</button>
+            <div className="flex justify-center items-center h-10 mt-10 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black ">
+              <button type="submit" className="w-[100%]">
+                SUBMIT
+              </button>
             </div>
           </form>
         </div>
