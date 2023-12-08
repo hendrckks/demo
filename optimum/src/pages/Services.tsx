@@ -36,36 +36,7 @@ function Services() {
               </div>
             </ServicesCard>
           </Link>
-          <Link to="/Service/Social-Media">
-            <ServicesCard>
-              <div className="p-5">
-                <h1 className="font-semibold text-[18px]">Social Media</h1>
-                <p className="mt-2">
-                  Join the social revolution with Optimum Outreach's Social
-                  Media service. Empower your brand to make waves across social
-                  platforms, connecting with your audience in meaningful ways.
-                  From strategic content creation to influencer partnerships, we
-                  craft a social presence that not only builds awareness but
-                  also fosters lasting connections.
-                </p>
-              </div>
-            </ServicesCard>
-          </Link>
-          <Link to="/Service/Web-Design">
-            <ServicesCard>
-              <div className="p-5">
-                <h1 className="font-semibold text-[18px]">Web Designing</h1>
-                <p className="mt-2">
-                  At Optimum Outreach, we believe in the power of visually
-                  stunning and user-friendly websites. Elevate your online
-                  presence with our Web Design service. Our design experts
-                  ensure your website is not just a digital space but a
-                  captivating experience that leaves a lasting impression on
-                  your visitors.
-                </p>
-              </div>
-            </ServicesCard>
-          </Link>
+
           <Link to="/Service/Lead-Generation">
             <ServicesCard>
               <div className="p-5">
