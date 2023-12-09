@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <div className="home-container">
-        <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans ">
+        <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans">
           <h1 className=" text-4xl flex justify-center items-center font-semibold">
             Welcome To <span className="mx-3">Optimum</span>{" "}
             <span className="text-neutral-600 mx-[0.5px]">Outreach .</span>
@@ -32,14 +32,14 @@ function Home() {
           <div className="flex items-center justify-center mt-14 font-semibold  space-x-4">
             <div className="w-auto">
               <button className="border-2 " type="button">
-                <h2 className="px-6 py-4 text-[15px]">
+                <h2 className="px-6 py-4 text-[17px]">
                   Request A Free Proposal
                 </h2>
               </button>
             </div>
             <div className="w-auto flex items-center justify-center group">
               <button className="cursor-pointer" type="button">
-                <h2 className="px-6 py-4 text-[15px]">Get Started</h2>
+                <h2 className="px-6 py-4 text-[17px]">Get Started</h2>
               </button>
               <div className="relative right-3 ">
                 <ArrowCircleRightIcon className="text-white group-hover:text-blue-900 group-hover:scale-150 transition-transform duration-300 ease-in-out" />

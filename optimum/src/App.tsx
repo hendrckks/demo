@@ -7,12 +7,12 @@ import Services from "./pages/Services";
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact-us" element={<Contact />} />
         <Route path="/Services" element={<Services />} />
       </Routes>
+      <Navbar />
     </Router>
   );
 }

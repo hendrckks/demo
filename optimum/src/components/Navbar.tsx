@@ -2,35 +2,44 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="p-3 flex justify-between bg-neutral-900 bg-opacity-20 hover:bg-black transition duration-300 ease-in-out fixed w-[100%]">
-      <Link to="/">
-        <h1 className="text-[19px] font-bold flex justify-center items-center p-1">
-          <span className="text-blue-300">Optimum</span>
-          <span className="text-neutral-400 mx-1">Outreach</span>
-        </h1>
-      </Link>
-      <div className="m-auto">
-        <ul>
-          <li className="font-semibold text-white flex space-x-10 text-[15px] font-DM-sans">
-            <Link to="/Services">
-              <h1 className="hover:text-blue-800 ">Services</h1>
-            </Link>
-            <Link to="/About">
-              <h1 className="hover:text-blue-800">About Us</h1>
-            </Link>
-            <Link to="/Blog">
-              <h1 className="hover:text-blue-800">Blog</h1>
-            </Link>
-            <Link to="/Contact-us">
-              <h1 className="hover:text-blue-800">Contact</h1>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="relative right-10 flex items-center">
-        <button className="text-white px-6 my-1 border-2 py-[1.5px] bg-transparent font-semibold hover:to-blue-500">
-          <Link to="/Contact-us">Book a Call</Link>
-        </button>
+    <div className="flex justify-center items-center font-extrabold">
+      <div className="bottom-10 flex bg-white bg-opacity-100 hover:bg-black transition duration-600 ease-in-out fixed w-fit p-3 rounded-full group ">
+        <div className="m-auto">
+          <ul>
+            <li className="text-black flex space-x-10 text-[14px] font-DM-sans items-center">
+              <Link
+                to="/Home"
+                className="rounded-full p-3 hover:bg-white hover:text-black transition duration-800 ease-in-out"
+              >
+                <h1>Home</h1>
+              </Link>
+              <Link
+                to="/Services"
+                className="rounded-full p-3 hover:bg-white hover:text-black transition duration-800 ease-in-out"
+              >
+                <h1>Services</h1>
+              </Link>
+              <Link
+                to="/About"
+                className="rounded-full p-3 hover:bg-white hover:text-black transition duration-800 ease-in-out"
+              >
+                <h1>About Us</h1>
+              </Link>
+              <Link
+                to="/Blog"
+                className="rounded-full p-3 w-[90px] flex items-center justify-center hover:bg-white hover:text-black transition duration-800 ease-in-out"
+              >
+                <h1>Blog</h1>
+              </Link>
+              <Link
+                to="/Contact-us"
+                className="rounded-full p-3 hover:bg-white hover:text-black transition duration-800 ease-in-out"
+              >
+                <h1>Contact</h1>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

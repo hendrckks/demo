@@ -5,13 +5,13 @@ import "../Services.css";
 function Services() {
   return (
     <div className="services-container">
-      <div className="flex justify-center items-center py-12">
-        <h1 className="text-[50px] font-semibold text-[#877bae]">
+      <div className="flex justify-center items-center py-10">
+        <h1 className="text-[60px] font-semibold text-[#877bae] tracking-wide">
           Our Digital Marketing Services
         </h1>
       </div>
       <div className="flex justify-center items-center w-[auto]">
-        <p className="w-[600px] text-[14px] text-[#e0dcf1]">
+        <p className="w-[600px] text-[17px] text-[#e0dcf1] font-semibold">
           At Optimum Outreach, we are more than just marketers; we're architects
           of digital success. Our expertise extends across the vast landscape of
           marketing, and we add a touch of spice to every campaign. High-growth
@@ -20,14 +20,12 @@ function Services() {
         </p>
       </div>
       <div className="flex justify-center items-center mt-10">
-        <div className="gap-x-grid col-span-full grid auto-rows-fr grid-cols-4 gap-y-8 lg:grid-cols-4 lg:gap-y-6 md:gap-y-4.5 sm:grid-cols-1 sm:gap-y-4 sm:gap-x-10">
+        <div className="gap-x-grid col-span-full grid auto-rows-fr grid-cols-4 gap-y-8 lg:grid-cols-3 lg:gap-y-6 md:gap-y-4.5 sm:grid-cols-1 sm:gap-y-4 sm:gap-x-10">
           <Link to="/Service/Web-App-Development">
             <ServicesCard>
               <div className="p-5">
-                <h1 className="font-semibold text-[18px]">
-                  Web App Development
-                </h1>
-                <p className="mt-2">
+                <h1 className="font-bold text-[18px]">Web App Development</h1>
+                <p className="mt-2 font-semibold">
                   At Optimum Outreach, we transform ideas into interactive
                   experiences through our Web App Development service. Craft a
                   digital masterpiece that captivates your audience, combining
@@ -40,13 +38,12 @@ function Services() {
           <Link to="/Service/Lead-Generation">
             <ServicesCard>
               <div className="p-5">
-                <h1 className="font-semibold text-[18px]">Lead Generation</h1>
-                <p className="mt-2">
+                <h1 className="font-bold text-[18px]">Lead Generation</h1>
+                <p className="mt-2 font-semibold">
                   Unlock the potential of your business with our Lead Generation
                   service at Optimum Outreach. Harness the power of dynamic
                   marketing strategies to invigorate your brand and propel it to
-                  new heights. We cultivate opportunities that resonate with
-                  your target audience, ensuring sustainable growth and success
+                  new heights.
                 </p>
               </div>
             </ServicesCard>
@@ -54,8 +51,8 @@ function Services() {
           <Link to="/Service/Paid-Ads">
             <ServicesCard>
               <div className="p-5">
-                <h1 className="font-semibold text-[18px]">Paid Advertisment</h1>
-                <p className="mt-2">
+                <h1 className="font-bold text-[18px]">Paid Advertisment</h1>
+                <p className="mt-2 font-semibold">
                   Optimize your digital visibility with the Paid Ads service at
                   Optimum Outreach. Unleash targeted campaigns that drive
                   results. From precision ad targeting to impactful creatives,
@@ -69,10 +66,10 @@ function Services() {
           <Link to="/Service/SEO">
             <ServicesCard>
               <div className="p-5">
-                <h1 className="font-semibold text-[18px]">
+                <h1 className="font-bold text-[18px]">
                   Search Engine Optimization
                 </h1>
-                <p className="mt-2">
+                <p className="mt-2 font-semibold">
                   Empower your online visibility and climb the ranks of search
                   engines with Optimum Outreach's SEO service. Our data-driven
                   approach ensures your brand stays ahead in the digital race.
@@ -86,8 +83,8 @@ function Services() {
           <Link to="/Service/Content-creation">
             <ServicesCard>
               <div className="p-5">
-                <h1 className="font-semibold text-[18px]">Content Creation</h1>
-                <p className="mt-2 text-[13px]">
+                <h1 className="font-bold text-[18px]">Content Creation</h1>
+                <p className="mt-2 text-[13px] font-semibold">
                   Compelling Visuals: Elevate your brand aesthetics with
                   visually stunning content. From eye-catching graphics to
                   attention-grabbing videos, we bring your brand to life in the
