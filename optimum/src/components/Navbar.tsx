@@ -45,7 +45,7 @@ function Navbar() {
       >
         <div className="m-auto">
           <ul>
-            <li className="text-white flex space-x-[5px] text-[15px] font-DM-sans items-center py-[-10px]">
+            <li className="text-white flex space-x-[2px] text-[15px] font-DM-sans items-center py-[-10px]">
               <Link
                 to="/"
                 className={`justify-center flex items-center rounded-full p-3 ${
