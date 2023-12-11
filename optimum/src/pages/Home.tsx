@@ -22,8 +22,8 @@ function Home() {
           </div>
           <div className="text-[17px]">
             <p className="font-semibold flex justify-center items-center">
-              A leading digital marketing agency dedicated to elevating your
-              brand through multi-channel marketing
+              Unlock Your Growth Potential. Get Bespoke Services Tailored to
+              Your Company.
             </p>
             <p className="flex justify-center font-semibold items-center">
               solutions, branding and creative design.

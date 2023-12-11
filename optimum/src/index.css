@@ -6,6 +6,14 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.custom-font {
+  font-family: "Plusjakartasans", sans-serif;
+}
+
+.active-link {
+  background-color: white;
+  color: black;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
