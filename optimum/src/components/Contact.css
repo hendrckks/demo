@@ -8,6 +8,7 @@
   flex-direction: column;
   padding-top: AUTO;
   background-color: white;
+  background-image: url(/src/assets/bg2.jpg);
   width: 100%;
   height: 100vh;
 }

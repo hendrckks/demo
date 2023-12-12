@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../index.css";
-
 interface ActiveLinks {
   home: boolean;
   services: boolean;
@@ -50,7 +49,7 @@ function Navbar() {
                 to="/"
                 className={`justify-center flex items-center rounded-full p-3 ${
                   activeLinks.home ? "bg-white text-black" : ""
-                } hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-[90px]`}
+                }  hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-[90px]`}
                 onClick={() => toggleActive("home")}
               >
                 <h1>Home</h1>
