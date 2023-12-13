@@ -8,7 +8,7 @@
   flex-direction: column;
   padding-top: AUTO;
   background-color: white;
-  background-image: url(/src/assets/bg2.jpg);
+  background-image: url("https://assets-global.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png");
   width: 100%;
   height: 100vh;
 }
