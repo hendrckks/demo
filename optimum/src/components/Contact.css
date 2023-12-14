@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 .contacts-container {
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Slab", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding-top: AUTO;
   background-color: white;
   background-image: url("https://assets-global.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png");

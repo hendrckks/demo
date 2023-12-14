@@ -1,6 +1,7 @@
 import "./Contact.css";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import React, { useState } from "react";
+import DoneIcon from "@mui/icons-material/Done";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -44,77 +45,107 @@ function Contact() {
 
   return (
     <div className="contacts-container">
-      <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
-        <h2 className="text-3xl font-extralight flex justify-center">
-          <span>TELL US ABOUT YOU</span>
+      <div className="flex-col w-[550px]">
+        <h2 className="text-[20px]">Launch Your Growth Journey Now.</h2>
+        <h2 className="font-extralight mt-8">
+          Become an Optimum Outreach partner and leap-frog your competition. But
+          first, let us:
         </h2>
-        <p className="py-[8px] mt-2 flex justify-center">
-          <span>Email</span>: optimumoutreach1@gmail.com
-        </p>
-        <div className="my-4 space-y-5">
-          <form onSubmit={handleSubmit}>
-            <div className="block">
-              <label htmlFor="name">
-                Full Name / Company Name
-                <span className="required">
-                  {" "}
-                  (required)<span>:</span>
-                </span>
-              </label>
-              <div>
-                <input
-                  type="text"
-                  className="mt-4 w-[100%] outline-none bg-transparent focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
-                  placeholder="-"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
+        <div className="mt-4">
+          <p>
+            <span>
+              <DoneIcon />
+            </span>
+            Take a deep dive into your business and objectives.
+          </p>
+          <p className="mt-2">
+            <span>
+              <DoneIcon />
+            </span>
+            Establish tailored strategies that propel you towards your goals.
+          </p>
+          <p className="mt-2">
+            <span>
+              <DoneIcon />
+            </span>
+            Outline expectations, deliverables, and budgets.
+          </p>
+        </div>
+        <h2 className="mt-14">You're In Great Hands</h2>
+      </div>
+      <div className="ml-8">
+        <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
+          <h2 className="text-3xl font-extralight flex justify-center ">
+            <span>TELL US ABOUT YOU</span>
+          </h2>
+          <p className="py-[8px] mt-2 flex justify-center">
+            <span>Email</span>: optimumoutreach1@gmail.com
+          </p>
+          <div className="my-4 space-y-5">
+            <form onSubmit={handleSubmit}>
+              <div className="block">
+                <label htmlFor="name">
+                  Full Name / Company Name
+                  <span className="required">
+                    {" "}
+                    (required)<span>:</span>
+                  </span>
+                </label>
+                <div>
+                  <input
+                    type="text"
+                    className="mt-4 w-[100%] outline-none bg-transparent focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                    placeholder="-"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="mt-4 block">
-              <label htmlFor="email">
-                Email Address
-                <span className="required">
-                  {" "}
-                  (required)<span>:</span>
-                </span>
-              </label>
-              <div>
-                <input
-                  type="text"
-                  className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
-                  placeholder="-"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+              <div className="mt-4 block">
+                <label htmlFor="email">
+                  Email Address
+                  <span className="required">
+                    {" "}
+                    (required)<span>:</span>
+                  </span>
+                </label>
+                <div>
+                  <input
+                    type="text"
+                    className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
+                    placeholder="-"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="block mt-4">
-              <label htmlFor="message">
-                Message
-                <span className="required">
-                  {" "}
-                  (required)<span>:</span>
-                </span>
-              </label>
-              <div>
-                <textarea
-                  className="w-[100%] overflow-hidden h-[120px] mt-4 outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
-                  placeholder="Your Message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
+              <div className="block mt-4">
+                <label htmlFor="message">
+                  Message
+                  <span className="required">
+                    {" "}
+                    (required)<span>:</span>
+                  </span>
+                </label>
+                <div>
+                  <textarea
+                    className="w-[100%] overflow-hidden h-[120px] mt-4 outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
+                    placeholder="Your Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="flex justify-center items-center h-10 mt-10 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black ">
-              <button type="submit" className="w-[100%]">
-                SUBMIT
-              </button>
-            </div>
-          </form>
+              <div className="flex justify-center items-center h-10 mt-10 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black ">
+                <button type="submit" className="w-[100%]">
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div className="text-white block mt-16">
+      {/* <div className="text-white block mt-16">
         <blockquote className="quote" data-animation-role="quote">
           <span>"</span>
           WE SHALL NOT CEASE FROM EXPLORATION AND AT THE END OF ALL OUR
@@ -123,7 +154,7 @@ function Contact() {
           <span>"</span>
         </blockquote>
         <h5 className="flex justify-center items-center">— T. S. ELIOT</h5>
-      </div>
+      </div> */}
     </div>
   );
 }

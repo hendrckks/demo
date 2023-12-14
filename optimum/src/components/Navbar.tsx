@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <div className="flex justify-center items-center font-[1000] custom-fonts">
       <div
-        className="bottom-10 flex bg-black bg-opacity-100 backdrop-blur-[8px] transition duration-500 ease-in-out fixed w-fit p-3 rounded-full group  
+        className="bottom-10 flex bg-black bg-opacity-100 backdrop-blur-[50px] transition duration-500 ease-in-out fixed w-fit p-3 rounded-full group  
        shadow-white"
       >
         <div className="m-auto">
