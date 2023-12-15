@@ -1,5 +1,6 @@
 import "../Home.css";
 import Contact from "../components/Contact";
+import FAQs from "../components/FAQs";
 import Services from "./Services";
 
 function Home() {
@@ -50,6 +51,7 @@ function Home() {
       </div>
       <Services />
       <Contact />
+      <FAQs />
     </div>
   );
 }
