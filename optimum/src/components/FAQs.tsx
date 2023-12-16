@@ -1,13 +1,74 @@
+import { useState } from "react";
 import "../FAQs.css";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 function FAQs() {
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (index) => {
+    if (selected === index) {
+      return setSelected(null);
+    }
+    setSelected(index);
+  };
+  const AccordionData = [
+    {
+      title: "How Much Do I Need To Pay To Get Started?",
+      Description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah",
+    },
+    {
+      title: "How Much Do I Need To Pay To Get Started?",
+      Description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah",
+    },
+    {
+      title: "How Much Do I Need To Pay To Get Started?",
+      Description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah",
+    },
+  ];
+
   return (
     <div className="bg-[#FFFEF2] h-[100vh] font-DM-sans">
-      <div className="p-5 flex justify-center items-center">
-        <h1 className="text-[50px] font-semibold">All The A's For Your Q's</h1>
+      <div className="p-24 flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center w-[550px]">
+          <h1 className="text-[50px] font-semibold">
+            All The A's For Your Q's
+          </h1>
+          {AccordionData.map((data, index) => (
+            <div key={index} className="m-auto cursor-pointer">
+              <div
+                className="flex items-center justify-center py-4"
+                onClick={() => toggle(index)}
+              >
+                <div className="bg-slate-300">
+                  <h2 className="font-semibold mt-4 text-[20px] flex items-center ">
+                    {data.title}
+                  </h2>
+                </div>
+                <span className="text-[20px] relative left-10 transition-all ease-in-out 0.5s">
+                  {selected == index ? <RemoveIcon /> : <AddIcon />}
+                </span>
+              </div>
+              <div
+                className={
+                  selected == index
+                    ? "max-h-[999px]"
+                    : "max-h-0 transition-all 0.5s cubic-beizer(0,1,0,1) overflow-hidden"
+                }
+              >
+                <p className="overflow-auto">{data.Description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
 export default FAQs;
+
+// "max-h-0 transition-all 0.5s cubic-beizer(0,1,0,1) overflow-hidden"
