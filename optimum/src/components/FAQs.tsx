@@ -31,19 +31,17 @@ function FAQs() {
   ];
 
   return (
-    <div className="bg-[#FFFEF2] h-[100vh] font-DM-sans">
+    <div className="bg-[#1D1A27] h-[100vh] font-DM-sans">
       <div className="p-24 flex flex-col justify-center items-center">
-        <div className="flex flex-col justify-center items-center w-[520px]">
-          <h1 className="text-[50px] font-semibold">
-            All The A's For Your Q's
-          </h1>
+        <h1 className="text-[50px] font-semibold">All The A's For Your Q's</h1>
+        <div className="flex flex-col justify-center items-center w-[520px] mt-16">
           {AccordionData.map((data, index) => (
             <div key={index} className="m-auto cursor-pointer">
               <div
-                className="flex items-center py-2"
+                className="flex items-center py-3"
                 onClick={() => toggle(index)}
               >
-                <div className="flex-col bg-slate-300 p-8 rounded-xl">
+                <div className="flex-col bg-slate-300 p-8 rounded-xl cursor-pointer transform hover:translate-y-1 transition-transform duration-200 ease-in">
                   <div className="flex items-center justify-between">
                     <h2 className="font-semibold text-[20px] flex items-center ">
                       {data.title}
@@ -56,7 +54,7 @@ function FAQs() {
                     className={
                       selected == index
                         ? "max-h-[999px]"
-                        : "max-h-0 transition-all 0.5s cubic-beizier(0,1,0,1) overflow-hidden"
+                        : "max-h-0 transition-all 0.5s cubic-bezier(0,1,0,1) overflow-hidden"
                     }
                   >
                     <p className="flex items-center justify-center overflow-auto mt-4">
