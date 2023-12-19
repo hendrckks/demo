@@ -1,3 +1,7 @@
-.font-DM-sans {
+.faq-wrapper {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #000, #000),
+    url("https://assets-global.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png");
+  background-size: cover;
   font-family: "DM Sans", sans-serif;
 }
