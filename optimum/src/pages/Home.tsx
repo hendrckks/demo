@@ -1,4 +1,5 @@
 import "../Home.css";
+import CaseStudy from "./CaseStudy";
 import Contact from "./Contact";
 import FAQs from "./FAQs";
 import Services from "./Services";
@@ -51,6 +52,7 @@ function Home() {
       </div>
       <Services />
       <Contact />
+      <CaseStudy />
       <FAQs />
     </div>
   );
