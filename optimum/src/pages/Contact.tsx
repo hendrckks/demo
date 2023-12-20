@@ -46,8 +46,8 @@ function Contact() {
   return (
     <div className="contacts-container">
       <div className="flex-col w-[550px]">
-        <h2 className="text-[20px]">Launch Your Growth Journey Now.</h2>
-        <h2 className="font-extralight mt-8">
+        <h2 className="text-[22px]">Launch Your Growth Journey Now.</h2>
+        <h2 className="font-semibold mt-8">
           Become an Optimum Outreach partner and leap-frog your competition. But
           first, let us:
         </h2>
@@ -75,7 +75,7 @@ function Contact() {
       </div>
       <div className="ml-8">
         <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
-          <h2 className="text-3xl font-extralight flex justify-center ">
+          <h2 className="text-3xl font-semibold flex justify-center ">
             <span>TELL US ABOUT YOU</span>
           </h2>
           <p className="py-[8px] mt-2 flex justify-center">

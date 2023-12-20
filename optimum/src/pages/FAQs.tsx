@@ -34,7 +34,7 @@ function FAQs() {
   return (
     <div className="faq-wrapper">
       <div className="p-24 flex flex-col justify-center items-center">
-        <h1 className="text-[50px] font-semibold text-white">
+        <h1 className="text-[50px] font-semibold text-black">
           All The A' s For Your Q' s
         </h1>
         <div className="flex flex-col justify-center items-center w-[720px] mt-16">

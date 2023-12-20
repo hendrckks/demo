@@ -51,8 +51,8 @@ function Home() {
         </div>
       </div>
       <Services />
-      <Contact />
       <CaseStudy />
+      <Contact />
       <FAQs />
     </div>
   );
