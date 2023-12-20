@@ -3,31 +3,36 @@ import CaseCard from "../components/CaseCard";
 
 const CaseStudy = () => {
   return (
-    <div className="bg-[#222222] h-[100vh] font-DM-sans">
-      <div className="p-24">
-        <h1 className="text-white text-[70px] font-semibold tracking-widest">
+    <div className="bg-[#222222] h-[100vh] font-DM-sans w-full">
+      <div className="p-10 ">
+        <h1 className="text-white text-[70px] font-semibold tracking-widest justify-center flex">
           Case Studies
         </h1>
-        <p className="w-[650px] mt-10 text-white text-[14px] ">
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah
-        </p>
-        <div className="rounded-[40px] p-4 mt-8 text-black bg-white w-fit h-fit flex items-center font-semibold hover:scale-105 transition-all ease-out">
-          <button type="button" className="p-2">
-            Explore Case Studies
-          </button>
+        <div className="flex justify-center">
+          <p className="w-[650px] mt-5 text-white text-[14px] ">
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah
+          </p>
+        </div>
+        <div className=" flex items-center justify-center ">
+          <div className="rounded-full p-4 mt-8 text-black bg-white w-fit h-fit font-semibold hover:scale-110 transition-transform ease-out duration-200">
+            <button type="button" className="p-2">
+              Explore Case Studies
+            </button>
+          </div>
         </div>
       </div>
-      <div className="px-24 mt-[-50px] flex space-x-3">
+      <div className="p-12 mt-[-50px] flex space-x-3 justify-center items-center">
         <CaseCard className="bg-[#f59268]">
           <div className="flex items-center justify-center">
             <h2 className="text-[50px]">hello</h2>
           </div>
         </CaseCard>
         <CaseCard className="bg-[#fb6f8b]">
-          <div>
+          <div className="flex items-center justify-center">
             <h2 className="text-[50px]">hello</h2>
           </div>
         </CaseCard>
