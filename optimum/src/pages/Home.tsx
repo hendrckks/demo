@@ -1,6 +1,6 @@
 import "../Home.css";
-import Contact from "../components/Contact";
-import FAQs from "../components/FAQs";
+import Contact from "./Contact";
+import FAQs from "./FAQs";
 import Services from "./Services";
 
 function Home() {

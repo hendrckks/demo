@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "../Contact.css";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import React, { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";

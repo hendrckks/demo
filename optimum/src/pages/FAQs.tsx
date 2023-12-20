@@ -14,17 +14,18 @@ function FAQs() {
   };
   const AccordionData = [
     {
-      title: "How Much Do I Need To Pay To Get Started?",
+      title:
+        "What Happens If You Get Too Man Clients? Will I Get Bad Services?",
       Description:
         "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah",
     },
     {
-      title: "How Much Do I Need To Pay To Get Started?",
+      title: "What Services Do You Actually Offer?",
       Description:
         "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah",
     },
     {
-      title: "How Much Do I Need To Pay To Get Started?",
+      title: "How Will I Know If My Campaign Is Working?",
       Description:
         "blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah",
     },
@@ -34,7 +35,7 @@ function FAQs() {
     <div className="faq-wrapper">
       <div className="p-24 flex flex-col justify-center items-center">
         <h1 className="text-[50px] font-semibold text-white">
-          All The A's For Your Q's
+          All The A' s For Your Q' s
         </h1>
         <div className="flex flex-col justify-center items-center w-[720px] mt-16">
           {AccordionData.map((data, index) => (
@@ -45,7 +46,7 @@ function FAQs() {
               >
                 <div className="flex-col bg-[#d8962e] text-black p-10 rounded-[22px] cursor-pointer transform hover:translate-y-1 transition-transform duration-300 ease-in inset-0 delay-0 shadow-md">
                   <div className="flex items-center justify-between">
-                    <h2 className="font-semibold text-[20px] flex items-center ">
+                    <h2 className="font-semibold text-[20px] flex items-center w-[400px]">
                       {data.title}
                     </h2>
                     <div className="flex items-center transition-shadow transform ease-in-out duration-300">
