@@ -175,7 +175,7 @@ function Contact() {
                 </div>
               </div>
               <div className="flex justify-center items-center h-10 mt-10 border-[1.5px] text-[14px] hover:bg-black hover:border-white hover:text-white border-black ">
-                <button type="submit" className="w-[100%]">
+                <button type="submit" className="w-[100%] font-semibold">
                   SUBMIT
                 </button>
               </div>

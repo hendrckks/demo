@@ -31,8 +31,8 @@ const SubmitModal: React.FC<SubmitModalProps> = ({
     >
       <div className="text-center flex-col items-center justify-center">
         <DoneIcon fontSize="large" className="mt-[20px]" />
-        <h2 className="text-xl font-semibold mt-4">Submission Successful!</h2>
-        <p>Your message has been sent successfully.</p>
+        <h2 className="text-xl font-semibold mt-4">Submitted Successfully!</h2>
+        <p>We'll get back to you within 24Hours.</p>
         <button
           className="mt-4 px-6 py-3 bg-black text-white text-[12px] rounded-full hover:scale-105 transition-transform duration-200"
           onClick={closeModal}
