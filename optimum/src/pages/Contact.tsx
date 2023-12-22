@@ -139,7 +139,7 @@ function Contact() {
                   />
                 </div>
               </div>
-              <div className="mt-4 block">
+              <div className="mt-4 block bg-transparent">
                 <label htmlFor="email">
                   Email Address
                   <span className="required">
@@ -183,10 +183,12 @@ function Contact() {
           </div>
         </div>
       </div>
-      <SubmitModal
-        isModalOpen={isModalOpen}
-        closeModal={() => setModalOpen(false)}
-      />{" "}
+      <div className="flex justify-center items-center">
+        <SubmitModal
+          isModalOpen={isModalOpen}
+          closeModal={() => setModalOpen(false)}
+        />{" "}
+      </div>
       {/* <div className="text-white block mt-16">
         <blockquote className="quote" data-animation-role="quote">
           <span>"</span>
