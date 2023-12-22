@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Home.css";
 import CaseStudy from "./CaseStudy";
 import Contact from "./Contact";
@@ -32,12 +33,14 @@ function Home() {
           </div>
           <div className="flex items-center justify-center mt-14 font-semibold  space-x-4">
             <div className="w-auto">
-              <button
-                className="border-2 rounded-full bg-white text-black hover:scale-110 transition-transform duration-200"
-                type="button"
-              >
-                <h2 className="px-6 py-4 text-[17px]">Request Free Audit</h2>
-              </button>
+              <Link to="/Contact-us">
+                <button
+                  className="border-2 rounded-full bg-white text-black hover:scale-110 transition-transform duration-200"
+                  type="button"
+                >
+                  <h2 className="px-6 py-4 text-[17px]">Request Free Audit</h2>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center absolute space-x-2 -rotate-90 right-1 bottom-[120px]">
