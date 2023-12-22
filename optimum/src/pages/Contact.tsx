@@ -2,11 +2,13 @@ import "../Contact.css";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import React, { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";
+import SubmitModal from "../components/SubmitModal";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -19,6 +21,8 @@ function Contact() {
     setMessage("");
     setName("");
     setEmail("");
+
+    setModalOpen(true);
 
     const templateParams = {
       name,
@@ -43,6 +47,17 @@ function Contact() {
       );
   };
 
+  function HandleInstagramClick() {
+    window.open("https://www.instagram.com/optimum_outreach_/");
+  }
+
+  function HandleTwitterClick() {
+    window.open("https://www.instagram.com/djvortex254/", "_blank");
+  }
+
+  function HandleLinkedinClick() {
+    window.open("https://www.instagram.com/djvortex254/", "_blank");
+  }
   return (
     <div className="contacts-container">
       <div className="flex-col w-[550px]">
@@ -72,6 +87,29 @@ function Contact() {
           </p>
         </div>
         <h2 className="mt-14">You're In Great Hands</h2>
+        <div className="flex space-x-6 mt-8 items-center cursor-pointer w-fit">
+          <a onClick={HandleInstagramClick}>
+            <img
+              alt="ig"
+              src="/src/socials assets/instagram.png"
+              className="h-9 hover:scale-110 transition-transform duration-200"
+            />
+          </a>
+          <a onClick={HandleTwitterClick}>
+            <img
+              alt="twitter"
+              src="/src/socials assets/twitter (1).png"
+              className="h-8 hover:scale-110 transition-transform duration-200"
+            />
+          </a>
+          <a onClick={HandleLinkedinClick}>
+            <img
+              alt="linkedin"
+              src="/src/socials assets/linkedin.png"
+              className="h-8 hover:scale-110 transition-transform duration-200"
+            />
+          </a>
+        </div>
       </div>
       <div className="ml-8">
         <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
@@ -145,6 +183,10 @@ function Contact() {
           </div>
         </div>
       </div>
+      <SubmitModal
+        isModalOpen={isModalOpen}
+        closeModal={() => setModalOpen(false)}
+      />{" "}
       {/* <div className="text-white block mt-16">
         <blockquote className="quote" data-animation-role="quote">
           <span>"</span>
