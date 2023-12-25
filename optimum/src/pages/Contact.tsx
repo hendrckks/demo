@@ -119,6 +119,10 @@ function Contact() {
           <p className="py-[8px] mt-2 flex justify-center">
             <span>Email</span>: optimumoutreach1@gmail.com
           </p>
+          <div className="flex justify-center items-center space-x-2">
+            {errorMessage && <ClearIcon className="text-red-600" />}
+            <h2 className="text-[15px] text-neutral-500">{errorMessage}</h2>
+          </div>
           <div className="my-4 space-y-5">
             <form onSubmit={handleSubmit}>
               <div className="block">
