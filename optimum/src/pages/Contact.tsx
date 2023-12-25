@@ -3,18 +3,20 @@ import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import React, { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";
 import SubmitModal from "../components/SubmitModal";
+import ClearIcon from "@mui/icons-material/Clear";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isModalOpen, setModalOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (!name || !email || !message) {
-      alert("Please fill in all required fields.");
+      setErrorMessage("Oops, Please fill in the required fields");
       return;
     }
 
@@ -45,6 +47,7 @@ function Contact() {
           console.log("FAILED...", err);
         }
       );
+    setErrorMessage("");
   };
 
   function HandleInstagramClick() {
