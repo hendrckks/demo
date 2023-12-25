@@ -16,11 +16,7 @@ function Contact() {
     event.preventDefault();
 
     if (!name || !email || !message) {
-<<<<<<< HEAD
       setErrorMessage("Oops, Please fill in the required fields");
-=======
-      setErrorMessage("Oops, Please fill in all required fields.");
->>>>>>> f85802d77f8b7da7873efc1cc43bcfe74b3610ce
       return;
     }
 
