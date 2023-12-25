@@ -11,8 +11,8 @@ function Home() {
       <div className="home-container">
         <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans">
           <h1 className=" text-4xl flex justify-center items-center font-semibold">
-            Welcome To <span className="mx-3">Optimum</span>{" "}
-            <span className="text-neutral-400 mx-[0.5px]">Outreach .</span>
+            Welcome To <span className="mx-3 ">Optimum</span>{" "}
+            <span className="mx-[0.5px] text-[#787878]">Outreach .</span>
           </h1>
           <div className="w-auto overflow-hidden my-5 mx-auto flex-col text-[40px]">
             <h1 className=" font-semibold flex justify-center items-center">

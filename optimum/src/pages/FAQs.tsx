@@ -16,7 +16,7 @@ function FAQs() {
     {
       title: "How do I Determine my Marketing Budget?",
       Description:
-        "There’s no 'one size fits all' answer to this question, as the amount you should allocate will depend on various factors, such as the size of your business, your long-term goals, and the industries you operate in. However, as a general rule, companies should be spending between 2-5% of their total revenue to promote their brand.",
+        "There's no 'one size fits all' answer to this question, as the amount you should allocate will depend on various factors, such as the size of your business, your long-term goals, and the industries you operate in. However, as a general rule, companies should be spending between 2-5% of their total revenue to promote their brand.",
     },
     {
       title:
