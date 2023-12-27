@@ -54,7 +54,7 @@ function FAQs() {
                 className="flex items-center py-1"
                 onClick={() => toggle(index)}
               >
-                <div className="flex-col bg-transparent text-black p-10 rounded-[22px] border-t-transparent border-b-neutral-600 border-2 cursor-pointer transform hover:translate-y-1 transition-transform duration-100 ease-in inset-0 delay-0 ">
+                <div className="flex-col bg-transparent text-black p-10 rounded-[22px] border-t-transparent border-r-transparent border-l-transparent border-b-neutral-600 border-2 cursor-pointer transform hover:translate-y-1 transition-transform duration-100 ease-in inset-0 delay-0 ">
                   <div className="flex items-center justify-between">
                     <h2 className="font-semibold text-[18px] flex items-center w-[500px]">
                       {data.title}
