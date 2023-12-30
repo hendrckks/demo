@@ -4,6 +4,9 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
 function FAQs() {
+  <a href="https://www.flaticon.com/free-icons/up" title="up icons">
+    Up icons created by Royyan Wijaya - Flaticon
+  </a>;
   const [selected, setSelected] = useState(null);
 
   const toggle = (index: number) => {
@@ -82,6 +85,22 @@ function FAQs() {
               </div>
             </div>
           ))}
+          <div className="font-semibold py-10 w-fit">
+            <h1 className=" flex justify-center items-center text-[22px]">
+              STILL HAVE QUESTIONS?
+            </h1>
+            <p className="text-[18px] mt-5">
+              For any inquiries beyond the scope of the FAQ, please feel free to
+              contact our support team.
+              <span>
+                <img
+                  src="/src/assets/arrow (1).png"
+                  alt="right up arrow"
+                  className="h-[24px] cursor-pointer"
+                />
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -89,5 +108,3 @@ function FAQs() {
 }
 
 export default FAQs;
-
-// "max-h-0 transition-all 0.5s cubic-beizer(0,1,0,1) overflow-hidden"
