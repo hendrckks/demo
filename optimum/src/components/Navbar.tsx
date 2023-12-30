@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../index.css";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+
 interface ActiveLinks {
   home: boolean;
   services: boolean;
@@ -20,6 +22,13 @@ function Navbar() {
     faqs: false,
   });
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const toggleActive = (link: keyof ActiveLinks) => {
     setActiveLinks((prevActiveLinks) => {
       const updatedLinks = Object.keys(prevActiveLinks).reduce(
@@ -36,20 +45,46 @@ function Navbar() {
     });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+
+      setActiveLinks((prevActiveLinks) => ({
+        ...prevActiveLinks,
+        home: isScrolled,
+      }));
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="flex justify-center items-center font-[1000] custom-fonts">
-      <div
-        className="bottom-10 flex bg-black bg-opacity-100 backdrop-blur-[50px] transition duration-500 ease-in-out fixed w-fit p-3 rounded-full group  
-       shadow-white"
-      >
+      <div className="bottom-10 flex bg-black bg-opacity-100 backdrop-blur-[50px] transition duration-500 ease-in-out fixed w-fit p-3 rounded-full group shadow-white">
         <div className="m-auto">
           <ul>
             <li className="text-white flex space-x-[2px] text-[15px] font-DM-sans items-center py-[-10px]">
               <Link
                 to="/"
                 className={`justify-center flex items-center rounded-full p-3 ${
-                  activeLinks.home ? "bg-white text-black" : ""
+                  activeLinks.home ? "bg-black text-white" : ""
                 }  hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-[90px]`}
+                onClick={() => {
+                  toggleActive("home");
+                  handleScrollToTop();
+                }}
+              >
+                <ArrowUpwardIcon />
+              </Link>
+              <Link
+                to="/"
+                className={`justify-center flex items-center rounded-full p-3 ${
+                  activeLinks.home ? "bg-black text-white" : ""
+                } hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-[90px]`}
                 onClick={() => toggleActive("home")}
               >
                 <h1>Home</h1>

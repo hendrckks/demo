@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import "../Home.css";
-import CaseStudy from "./CaseStudy";
+// import CaseStudy from "./CaseStudy";
 import Contact from "./Contact";
 import FAQs from "./FAQs";
 import Services from "./Services";
+import Footer from "./Footer";
 
 function Home() {
   return (
     <div>
-      <div className="home-container">
+      <div id="home" className="home-container">
         <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans">
           <h1 className=" text-4xl flex justify-center items-center font-semibold">
             Welcome To <span className="mx-3 ">Optimum</span>{" "}
@@ -54,9 +55,10 @@ function Home() {
         </div>
       </div>
       <Services />
-      <CaseStudy />
+      {/* <CaseStudy /> */}
       <Contact />
       <FAQs />
+      <Footer />
     </div>
   );
 }
