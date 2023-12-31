@@ -89,7 +89,7 @@ function FAQs() {
             <h1 className=" flex justify-center items-center text-[22px]">
               STILL HAVE QUESTIONS?
             </h1>
-            <p className="text-[18px] mt-5">
+            <p className="text-[18px] mt-5 block">
               For any inquiries beyond the scope of the FAQ, please feel free to
               contact our support team.
               <span>

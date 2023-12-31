@@ -83,7 +83,7 @@ function Navbar() {
               <Link
                 to="/"
                 className={`justify-center flex items-center rounded-full p-3 ${
-                  activeLinks.home ? "bg-black text-white" : ""
+                  activeLinks.home ? "bg-white text-black" : ""
                 } hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-[90px]`}
                 onClick={() => toggleActive("home")}
               >
