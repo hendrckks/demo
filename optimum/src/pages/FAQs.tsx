@@ -59,7 +59,7 @@ function FAQs() {
               >
                 <div className="flex-col bg-transparent text-black p-10 rounded-[22px] border-t-transparent border-r-transparent border-l-transparent border-b-neutral-600 border-2 cursor-pointer transform hover:translate-y-1 transition-transform duration-100 ease-in inset-0 delay-0 ">
                   <div className="flex items-center justify-between">
-                    <h2 className="font-semibold text-[18px] flex items-center w-[500px]">
+                    <h2 className="font-semibold text-[16px] flex items-center w-[500px]">
                       {data.title}
                     </h2>
                     <div className="flex items-center transition-shadow transform ease-in-out duration-300">
@@ -85,11 +85,11 @@ function FAQs() {
               </div>
             </div>
           ))}
-          <div className="font-semibold py-10 w-fit">
-            <h1 className=" flex justify-center items-center text-[22px]">
+          <div className=" py-10 w-fit">
+            <h1 className="font-extrabold flex justify-center items-center text-[22px]">
               STILL HAVE QUESTIONS?
             </h1>
-            <p className="text-[18px] mt-5 block">
+            <p className="text-[18px] mt-5 block font-semibold">
               For any inquiries beyond the scope of the FAQ, please feel free to
               contact our support team.
               <span>

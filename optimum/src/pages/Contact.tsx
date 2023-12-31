@@ -7,6 +7,7 @@ import ClearIcon from "@mui/icons-material/Clear";
 
 function Contact() {
   const [name, setName] = useState("");
+  const [webUrl, setWebUrl] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isModalOpen, setModalOpen] = useState(false);
@@ -23,6 +24,7 @@ function Contact() {
     setMessage("");
     setName("");
     setEmail("");
+    setWebUrl("");
 
     setModalOpen(true);
 
@@ -30,6 +32,7 @@ function Contact() {
       name,
       email,
       message,
+      webUrl,
     };
 
     emailjs
@@ -63,13 +66,13 @@ function Contact() {
   }
   return (
     <div className="contacts-container">
-      <div className="flex-col w-[550px]">
+      <div className="flex-col w-[550px] text-white">
         <h2 className="text-[22px]">Launch Your Growth Journey Now.</h2>
         <h2 className="font-semibold mt-8">
           Become an Optimum Outreach partner and leap-frog your competition. But
           first, let us:
         </h2>
-        <div className="mt-4">
+        <div className="mt-4 text-[14px]">
           <p>
             <span>
               <DoneIcon />
@@ -95,27 +98,27 @@ function Contact() {
             <img
               alt="ig"
               src="/src/socials assets/instagram.png"
-              className="h-9 hover:scale-110 transition-transform duration-200"
+              className="h-6 hover:scale-110 transition-transform duration-200"
             />
           </a>
           <a onClick={HandleTwitterClick}>
             <img
               alt="twitter"
               src="/src/socials assets/twitter (1).png"
-              className="h-8 hover:scale-110 transition-transform duration-200"
+              className="h-6 hover:scale-110 transition-transform duration-200 filter invert"
             />
           </a>
           <a onClick={HandleLinkedinClick}>
             <img
               alt="linkedin"
               src="/src/socials assets/linkedin.png"
-              className="h-8 hover:scale-110 transition-transform duration-200"
+              className="h-6 hover:scale-110 transition-transform duration-200"
             />
           </a>
         </div>
       </div>
       <div className="ml-8">
-        <div className="border-2 block text-black bg-neutral-100 border-transparent p-20 w-[400px] sm:w-[600px]">
+        <div className="border-2 block text-black bg-white border-transparent p-20 w-[40%] sm:w-[550px]">
           <h2 className="text-3xl font-semibold flex justify-center ">
             <span>TELL US ABOUT YOU</span>
           </h2>
@@ -129,53 +132,71 @@ function Contact() {
           <div className="my-4 space-y-5">
             <form onSubmit={handleSubmit}>
               <div className="block">
-                <label htmlFor="name">
+                {/* <label htmlFor="name">
                   Full Name / Company Name
                   <span className="required">
                     {" "}
                     (required)<span>:</span>
                   </span>
-                </label>
+                </label> */}
                 <div>
                   <input
                     type="text"
-                    className="mt-4 w-[100%] outline-none bg-transparent focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
-                    placeholder="-"
+                    className="mt-2 py-2 w-[100%] text-black outline-none bg-transparent focus:ring-0 border-[0.3px] border-black border-r-transparent border-l-transparent border-t-transparent"
+                    placeholder="First Name*"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
               </div>
               <div className="mt-4 block bg-transparent">
-                <label htmlFor="email">
+                {/* <label htmlFor="email">
                   Email Address
                   <span className="required">
                     {" "}
                     (required)<span>:</span>
                   </span>
-                </label>
+                </label> */}
                 <div>
                   <input
                     type="text"
-                    className="mt-4 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
-                    placeholder="-"
+                    className="mt-2 py-2 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
+                    placeholder="Email Address*"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
               </div>
+              <div className="mt-4 block bg-transparent">
+                {/* <label htmlFor="email">
+                  Email Address
+                  <span className="required">
+                    {" "}
+                    (required)<span>:</span>
+                  </span>
+                </label> */}
+                <div>
+                  <input
+                    type="text"
+                    className="mt-2 py-2 w-[100%] outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
+                    placeholder="Website Url (Optional)"
+                    value={webUrl}
+                    onChange={(e) => setWebUrl(e.target.value)}
+                  />
+                </div>
+              </div>
               <div className="block mt-4">
-                <label htmlFor="message">
+                {/* <label htmlFor="message">
                   Message
                   <span className="required">
                     {" "}
                     (required)<span>:</span>
                   </span>
-                </label>
+                </label> */}
                 <div>
                   <textarea
                     className="w-[100%] overflow-hidden h-[120px] mt-4 outline-none focus:ring-0 border-[0.3px] bg-transparent border-black border-r-transparent border-l-transparent border-t-transparent"
-                    placeholder="Your Message"
+                    placeholder="Message*"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
