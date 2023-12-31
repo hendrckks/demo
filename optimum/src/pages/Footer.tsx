@@ -13,8 +13,8 @@ const Footer = () => {
     window.open("https://www.instagram.com/optimum_outreach_/", "_blank");
   }
   return (
-    <div className="bg-[#252525] h-[764px] w-full flex box-border font-DM-sans space-x-10 caret-transparent">
-      <div className="p-10 py-14 text-[#fffef2] text-16px">
+    <div className="bg-[#252525] h-[764px] w-full flex box-border font-DM-sans space-x-20 caret-transparent">
+      <div className="p-14 text-[#fffef2] text-16px">
         <div className="border-b-[1.5px] border-[#fffef2]">
           <h2 className="font-[600]">
             Subscribe to Optimum Outreach Communications
@@ -23,15 +23,19 @@ const Footer = () => {
       </div>
       <div className="flex-col justify-center">
         <div className="gap-x-12 gap-y-14 text-[#fffef2] text-[16px] flex">
-          <div className="border-b-[1.5px] border-[#fffef2] mt-14 h-fit">
-            <h2 className="font-[600]">Services</h2>
+          <div>
+            <div className="border-b-[1.5px] border-[#fffef2] mt-14 w-[102px]">
+              <h2 className="font-[600]">Services</h2>
+            </div>
           </div>
-          <div className="border-b-[1.5px] border-[#fffef2] mt-14 h-fit">
-            <h2 className="font-[600]">Social Media</h2>
+          <div>
+            <div className="border-b-[1.5px] border-[#fffef2] mt-14 w-[102px]">
+              <h2 className="font-[600]">About Us</h2>
+            </div>
           </div>
           <div>
             <div className="border-b-[1.5px] border-[#fffef2] mt-14">
-              <h2 className="font-[600]">About Us</h2>
+              <h2 className="font-[600]">Social Media</h2>
             </div>
             <div className="mt-4">
               <ul className="space-y-5">
