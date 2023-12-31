@@ -89,7 +89,7 @@ function FAQs() {
             <h1 className="font-extrabold flex justify-center items-center text-[22px]">
               STILL HAVE QUESTIONS?
             </h1>
-            <p className="text-[18px] mt-5 block font-semibold">
+            <p className="text-[16px] mt-5 block font-semibold">
               For any inquiries beyond the scope of the FAQ, please feel free to
               contact our support team.
               <span>

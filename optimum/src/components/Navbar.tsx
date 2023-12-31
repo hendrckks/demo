@@ -98,7 +98,7 @@ function Navbar() {
               >
                 <h1>Services</h1>
               </Link>
-              {/* <Link
+              <Link
                 to="/About"
                 className={`rounded-full p-3 justify-center flex items-center hover:bg-white hover:text-black transition duration-500 ease-in-out w-[90px] ${
                   activeLinks.about ? "bg-white text-black" : ""
@@ -107,7 +107,7 @@ function Navbar() {
               >
                 <h1>About Us</h1>
               </Link>
-              <Link
+              {/* <Link
                 to="/Blog"
                 className={`rounded-full p-3 w-[90px] flex items-center justify-center hover:bg-white hover:text-black transition duration-500 ease-in-out ${
                   activeLinks.blog ? "bg-white text-black" : ""

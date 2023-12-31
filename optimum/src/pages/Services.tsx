@@ -11,7 +11,7 @@ function Services() {
         </h1>
       </div>
       <div className="flex justify-center items-center w-[auto]">
-        <p className="w-[600px] text-[17px] text-[#e0dcf1] font-semibold">
+        <p className="w-[600px] text-[16px] text-[#e0dcf1] font-semibold">
           At Optimum Outreach, we are more than just marketers; we're architects
           of digital success. Our expertise extends across the vast landscape of
           marketing, and we add a touch of spice to every campaign. High-growth
