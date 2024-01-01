@@ -1,5 +1,5 @@
 import "../Contact.css";
-import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
+import emailjs, { EmailJSResponseStatus } from "emailjs-com";
 import React, { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";
 import SubmitModal from "../components/SubmitModal";
