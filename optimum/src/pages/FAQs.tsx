@@ -7,7 +7,7 @@ function FAQs() {
   <a href="https://www.flaticon.com/free-icons/up" title="up icons">
     Up icons created by Royyan Wijaya - Flaticon
   </a>;
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<number | null>(null);
 
   const toggle = (index: number) => {
     if (selected === index) {
