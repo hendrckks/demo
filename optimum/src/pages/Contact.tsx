@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";
 import SubmitModal from "../components/SubmitModal";
 import ClearIcon from "@mui/icons-material/Clear";
+import ig from "../socials assets/instagram.png";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -97,7 +98,7 @@ function Contact() {
           <a onClick={HandleInstagramClick}>
             <img
               alt="ig"
-              src="/src/socials assets/instagram.jpeg"
+              src={ig}
               className="h-6 hover:scale-110 transition-transform duration-200"
             />
           </a>
