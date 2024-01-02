@@ -47,7 +47,7 @@ function Home() {
           <div className="flex justify-center items-center absolute space-x-2 -rotate-90 right-1 bottom-[120px]">
             <img
               className="w-16 h-10"
-              src="/src/assets/arrow down.png"
+              src="/src/assets/arrow%20down.png"
               alt="arrow"
             />
             <p className="text-[12px] text-black font-semibold">SCROLL DOWN</p>
