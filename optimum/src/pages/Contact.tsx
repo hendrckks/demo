@@ -97,7 +97,7 @@ function Contact() {
           <a onClick={HandleInstagramClick}>
             <img
               alt="ig"
-              src="/src/socials assets/instagram.jpg"
+              src="/src/socials assets/instagram.jpeg"
               className="h-6 hover:scale-110 transition-transform duration-200"
             />
           </a>
