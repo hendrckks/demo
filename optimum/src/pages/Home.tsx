@@ -5,26 +5,29 @@ import Contact from "./Contact";
 import FAQs from "./FAQs";
 import Services from "./Services";
 import Footer from "./Footer";
-import down from "../assets/arrow%20down.png";
+import down from "../assets/arrowdown.png";
 
 function Home() {
   return (
-    <div>
-      <div id="home" className="home-container">
-        <div className="gap-x-4 text-white justify-center items-center m-auto w-auto py-52 font-DM-sans">
-          <h1 className=" text-4xl flex justify-center items-center font-semibold">
-            Welcome To <span className="mx-3 ">Optimum</span>{" "}
+    <div className="sm:w-[100vw] w-[100vw]">
+      <div
+        id="home"
+        className="bg-cover bg-center h-[100vh] p-auto w-100vw home-background"
+      >
+        <div className="gap-x-4 text-white justify-center items-center m-auto sm:py-52 py-44 font-DM-sans sm:w-auto w-full ">
+          <h1 className=" sm:text-4xl text-[18px] flex justify-center items-center font-semibold">
+            Welcome To <span className="sm:mx-3 mx-2">Optimum</span>{" "}
             <span className="mx-[0.5px] text-[#787878]">Outreach .</span>
           </h1>
-          <div className="w-auto overflow-hidden my-5 mx-auto flex-col text-[40px]">
-            <h1 className=" font-semibold flex justify-center items-center">
-              Your Full-Service Digital Patner. Elevate Your Business With
+          <div className="sm:w-auto w-[400px] overflow-hidden my-4 flex-col sm:text-[40px] text-[15px]">
+            <h1 className="font-semibold flex justify-center items-center">
+              Your Full-Service Digital Patner. Elevate Your Business
             </h1>
             <h1 className=" font-semibold flex justify-center items-center">
-              Expert Solutions .
+              With Expert Solutions .
             </h1>
           </div>
-          <div className="text-[17px]">
+          <div className="sm:text-[17px] text-[10px] sm:w-auto w-[400px] flex-col justify-center">
             <p className="font-semibold flex justify-center items-center">
               Unlock Your Growth Potential. Get Bespoke Services Tailored to
               Your Company.
@@ -33,14 +36,16 @@ function Home() {
               solutions, branding and creative design.
             </p>
           </div>
-          <div className="flex items-center justify-center mt-14 font-semibold space-x-4">
+          <div className="flex items-center justify-center sm:mt-14 mt-8 font-semibold space-x-4">
             <div className="w-auto">
               <Link to="/Contact-us">
                 <button
-                  className="border-2 rounded-full bg-white text-black hover:scale-110 transition-transform duration-200"
+                  className="border-2 sm:w-auto w-auto rounded-full bg-white text-black hover:scale-110 transition-transform duration-200"
                   type="button"
                 >
-                  <h2 className="px-6 py-4 text-[17px]">Request Free Audit</h2>
+                  <h2 className="px-6 py-4 sm:text-[17px] text-[12px]">
+                    Request Free Audit
+                  </h2>
                 </button>
               </Link>
             </div>

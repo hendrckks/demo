@@ -4,14 +4,14 @@ import "../Services.css";
 
 function Services() {
   return (
-    <div id="service" className="services-container">
+    <div id="service" className="sm:h-[100vh] h-[full] background font-DM-sans">
       <div className="flex justify-center items-center py-10">
-        <h1 className="text-[60px] font-semibold text-[#877bae] tracking-wide">
+        <h1 className="sm:text-[60px] text-[40px] font-semibold text-[#877bae] tracking-wide">
           Our Digital Marketing Services
         </h1>
       </div>
       <div className="flex justify-center items-center w-[auto]">
-        <p className="w-[600px] text-[16px] text-[#e0dcf1] font-semibold">
+        <p className="w-[600px] sm:text-[16px] text-[12px] text-[#e0dcf1] font-semibold">
           At Optimum Outreach, we are more than just marketers; we're architects
           of digital success. Our expertise extends across the vast landscape of
           marketing, and we add a touch of spice to every campaign. High-growth
@@ -20,7 +20,7 @@ function Services() {
         </p>
       </div>
       <div className="flex justify-center items-center mt-10">
-        <div className="gap-x-grid col-span-full grid auto-rows-fr grid-cols-4 gap-y-8 lg:grid-cols-3 lg:gap-y-6 md:gap-y-4.5 sm:grid-cols-1 sm:gap-y-4 sm:gap-x-10">
+        <div className="gap-x-grid col-span-full sm:grid flex-col auto-rows-fr grid-cols-4 gap-y-8 lg:grid-cols-3 lg:gap-y-6 md:gap-y-4.5 sm:grid-cols-1 sm:gap-y-4 sm:gap-x-10">
           <Link to="/Services/Web-App-Development">
             <ServicesCard>
               <div className="p-5">

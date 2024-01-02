@@ -1,5 +1,6 @@
-.services-container {
-  height: 100vh;
+.font-DM-sans {
   font-family: "DM Sans", sans-serif;
+}
+.background {
   background-image: url("/src/assets/v1016-b-08.jpg");
 }

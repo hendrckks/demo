@@ -51,16 +51,16 @@ function FAQs() {
         <h1 className="text-[50px] font-semibold text-black">
           All The A' s For Your Q' s
         </h1>
-        <div className="flex flex-col justify-center items-center w-[720px] mt-10">
+        <div className="flex flex-col justify-center items-center w-[720px]  sm:mt-8 mt-6">
           {AccordionData.map((data, index) => (
             <div key={index} className="m-auto cursor-pointer">
               <div
                 className="flex items-center py-1"
                 onClick={() => toggle(index)}
               >
-                <div className="flex-col bg-transparent text-black p-10 rounded-[22px] border-t-transparent border-r-transparent border-l-transparent border-b-neutral-600 border-2 cursor-pointer transform hover:translate-y-1 transition-transform duration-100 ease-in inset-0 delay-0 ">
-                  <div className="flex items-center justify-between">
-                    <h2 className="font-semibold text-[16px] flex items-center w-[500px]">
+                <div className="flex-col bg-transparent sm:w-full w-[350px] text-black p-10 rounded-[22px] border-t-transparent border-r-transparent border-l-transparent border-b-neutral-600 border-2 cursor-pointer transform hover:translate-y-1 transition-transform duration-100 ease-in inset-0 delay-0 ">
+                  <div className="flex items-center justify-between ">
+                    <h2 className="font-semibold sm:text-[16px] text-[14px] flex items-center w-[500px]">
                       {data.title}
                     </h2>
                     <div className="flex items-center transition-shadow transform ease-in-out duration-300">
@@ -90,14 +90,14 @@ function FAQs() {
             <h1 className="font-extrabold flex justify-center items-center text-[22px]">
               STILL HAVE QUESTIONS?
             </h1>
-            <p className="text-[16px] mt-5 block font-semibold">
+            <p className="text-[16px] mt-5 flex font-semibold sm:w-full w-[300px]">
               For any inquiries beyond the scope of the FAQ, please feel free to
               contact our support team.
               <span>
                 <img
                   src={pointer}
                   alt="right up arrow"
-                  className="h-[24px] cursor-pointer"
+                  className="h-[30px] cursor-pointer"
                 />
               </span>
             </p>

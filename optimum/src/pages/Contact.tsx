@@ -68,7 +68,7 @@ function Contact() {
     window.open("https://www.instagram.com/djvortex254/", "_blank");
   }
   return (
-    <div className="contacts-container">
+    <div className="w-full font-DM-sans sm:flex justify-center items-center sm:p-auto py-8 bg-[#212121] sm:h-[100vh] h-full font-extrabold ">
       <div className="flex-col w-[550px] text-white">
         <h2 className="text-[22px]">Launch Your Growth Journey Now.</h2>
         <h2 className="font-semibold mt-8">

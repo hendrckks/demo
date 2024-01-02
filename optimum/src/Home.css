@@ -1,10 +1,6 @@
-.home-container {
+/* background-color: rgba(0, 0, 0, 0.9); */
+.home-background {
   background-image: url("/src/assets/back1.jpg");
-  /* background-color: rgba(0, 0, 0, 0.9); */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  padding: auto;
 }
 
 .font-roboto-slab {
