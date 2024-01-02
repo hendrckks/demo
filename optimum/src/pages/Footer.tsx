@@ -1,4 +1,5 @@
 import "../Footer.css";
+import pointer from "../assets/arrow.png";
 
 const Footer = () => {
   function HandleInstagramClick() {
@@ -47,7 +48,7 @@ const Footer = () => {
                     Instagram
                     <span>
                       <img
-                        src="/src/assets/arrow.png"
+                        src={pointer}
                         alt="right up arrow"
                         className="h-[28px] cursor-pointer filter invert"
                       />
@@ -62,7 +63,7 @@ const Footer = () => {
                     LinkedIn{" "}
                     <span>
                       <img
-                        src="/src/assets/arrow.png"
+                        src={pointer}
                         alt="right up arrow"
                         className="h-[28px] cursor-pointer filter invert"
                       />
@@ -77,7 +78,7 @@ const Footer = () => {
                     Twitter / X{" "}
                     <span>
                       <img
-                        src="/src/assets/arrow.png"
+                        src={pointer}
                         alt="right up arrow"
                         className="h-[28px] cursor-pointer filter invert"
                       />

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../FAQs.css";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import pointer from "../assets/arrow.png";
 
 function FAQs() {
   <a href="https://www.flaticon.com/free-icons/up" title="up icons">
@@ -94,7 +95,7 @@ function FAQs() {
               contact our support team.
               <span>
                 <img
-                  src="/src/assets/arrow.png"
+                  src={pointer}
                   alt="right up arrow"
                   className="h-[24px] cursor-pointer"
                 />
