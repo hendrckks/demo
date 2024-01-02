@@ -5,6 +5,8 @@ import DoneIcon from "@mui/icons-material/Done";
 import SubmitModal from "../components/SubmitModal";
 import ClearIcon from "@mui/icons-material/Clear";
 import ig from "../socials assets/instagram.png";
+import twitter from "../socials assets/twitter.png";
+import linkedin from "../socials assets/linkedin.png";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -105,14 +107,14 @@ function Contact() {
           <a onClick={HandleTwitterClick}>
             <img
               alt="twitter"
-              src="/src/socials assets/twitter.png"
+              src={twitter}
               className="h-6 hover:scale-110 transition-transform duration-200 filter invert"
             />
           </a>
           <a onClick={HandleLinkedinClick}>
             <img
               alt="linkedin"
-              src="/src/socials assets/linkedin.png"
+              src={linkedin}
               className="h-6 hover:scale-110 transition-transform duration-200"
             />
           </a>

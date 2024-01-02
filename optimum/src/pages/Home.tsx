@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import FAQs from "./FAQs";
 import Services from "./Services";
 import Footer from "./Footer";
+import down from "../assets/arrow%20down.png";
 
 function Home() {
   return (
@@ -32,7 +33,7 @@ function Home() {
               solutions, branding and creative design.
             </p>
           </div>
-          <div className="flex items-center justify-center mt-14 font-semibold  space-x-4">
+          <div className="flex items-center justify-center mt-14 font-semibold space-x-4">
             <div className="w-auto">
               <Link to="/Contact-us">
                 <button
@@ -45,11 +46,7 @@ function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center absolute space-x-2 -rotate-90 right-1 bottom-[120px]">
-            <img
-              className="w-16 h-10"
-              src="/src/assets/arrow%20down.png"
-              alt="arrow"
-            />
+            <img className="w-16 h-10" src={down} alt="arrow" />
             <p className="text-[12px] text-black font-semibold">SCROLL DOWN</p>
           </div>
         </div>
