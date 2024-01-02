@@ -94,7 +94,7 @@ function FAQs() {
               contact our support team.
               <span>
                 <img
-                  src="/src/assets/arrow (1).png"
+                  src="/src/assets/arrow.png"
                   alt="right up arrow"
                   className="h-[24px] cursor-pointer"
                 />

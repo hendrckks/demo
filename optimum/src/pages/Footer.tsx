@@ -47,7 +47,7 @@ const Footer = () => {
                     Instagram
                     <span>
                       <img
-                        src="/src/assets/arrow (1).png"
+                        src="/src/assets/arrow.png"
                         alt="right up arrow"
                         className="h-[28px] cursor-pointer filter invert"
                       />
@@ -62,7 +62,7 @@ const Footer = () => {
                     LinkedIn{" "}
                     <span>
                       <img
-                        src="/src/assets/arrow (1).png"
+                        src="/src/assets/arrow.png"
                         alt="right up arrow"
                         className="h-[28px] cursor-pointer filter invert"
                       />
@@ -77,7 +77,7 @@ const Footer = () => {
                     Twitter / X{" "}
                     <span>
                       <img
-                        src="/src/assets/arrow (1).png"
+                        src="/src/assets/arrow.png"
                         alt="right up arrow"
                         className="h-[28px] cursor-pointer filter invert"
                       />

@@ -104,7 +104,7 @@ function Contact() {
           <a onClick={HandleTwitterClick}>
             <img
               alt="twitter"
-              src="/src/socials assets/twitter (1).png"
+              src="/src/socials assets/twitter.png"
               className="h-6 hover:scale-110 transition-transform duration-200 filter invert"
             />
           </a>
