@@ -120,12 +120,12 @@ function Contact() {
           </a>
         </div>
       </div>
-      <div className="ml-8">
-        <div className="border-2 block text-black bg-white border-transparent p-20 w-[40%] sm:w-[550px]">
-          <h2 className="text-3xl font-semibold flex justify-center ">
+      <div className="ml-8 sm:mt-auto mt-10">
+        <div className="border-2 block text-black bg-white border-transparent p-20 w-[100%] sm:w-[550px]">
+          <h2 className="sm:text-3xl text-[20px] font-semibold flex justify-center ">
             <span>TELL US ABOUT YOU</span>
           </h2>
-          <p className="py-[8px] mt-2 flex justify-center">
+          <p className="py-[8px] mt-2 flex justify-center text-[12px]">
             <span>Email</span>: optimumoutreach1@gmail.com
           </p>
           <div className="flex justify-center items-center space-x-2">

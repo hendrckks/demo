@@ -95,7 +95,7 @@ function Services() {
             </ServicesCard>
           </Link>
           <Link to="/Services/WebDesign">
-            <ServicesCard>
+            <ServicesCard className="sm:mb-0 mb-12">
               <div className="p-5">
                 <h1 className="font-bold text-[18px]">Web Design</h1>
                 <p className="mt-2 text-[13px] font-medium">

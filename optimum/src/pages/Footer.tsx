@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           <div>
             <div className="border-b-[1.5px] border-[#fffef2] mt-14">
-              <h2 className="font-[590]">Social Media</h2>
+              <h2 className="font-[590]">Social Media</h2>sssssss
             </div>
             <div className="mt-4">
               <ul className="space-y-2 font-medium">
